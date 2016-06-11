@@ -1,1 +1,47 @@
-<h1 data-ng-click="showSongs()">TEST</h1>
+<!-- <h1 data-ng-click="showSongs()">TEST</h1> -->
+<div class="container search search__container">
+  <div class="row search__row">
+    <form class="search__form" data-ng-submit="showSongs()">
+      <input type="text" class="search__input search__box" placeholder="search tracks">
+      <input type="submit" class="search__input search__submit" "btn">
+    </form>
+  </div>
+</div>
+
+<div class="container results results__container">
+  <div class="results__row">
+    <div class="results__column">
+      <h3 class="results__title">TRACK TITLE</h3>
+      <img data-ng-src="/views/citySock.jpg" height=150 widht=150 alt="" />
+      <h5 class="results__artist">Artist</h5>
+    </div>
+    <div class="results__column">
+      <h3 class="results__title">TRACK TITLE</h3>
+      <img data-ng-src="/views/citySock.jpg" height=150 widht=150 alt="" />
+      <h5 class="results__artist">Artist</h5>
+    </div>
+    <div class="results__column">
+      <h3 class="results__title">TRACK TITLE</h3>
+      <img data-ng-src="/views/citySock.jpg" height=150 widht=150 alt="" />
+      <h5 class="results__artist">Artist</h5>
+    </div>
+    <div class="results__column">
+      <h3 class="results__title">TRACK TITLE</h3>
+      <img data-ng-src="/views/citySock.jpg" height=150 widht=150 alt="" />
+      <h5 class="results__artist">Artist</h5>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+     <ul class="plyr">
+       <li class="plyr__cntrl superShadow"><i class="fa fa-play" aria-hidden="true"></i></li>
+       <li class="plyr__cntrl superShadow"><i class="fa fa-pause" aria-hidden="true"></i></li>
+       <li class="plyr__cntrl superShadow"><i class="fa fa-stop" aria-hidden="true"></i></li>
+     </ul>
+   <section class="plyr__info">
+     <h4 class="plyr__title">Title</h4>
+     <h5 class="plyr__artist">Artist</h5>
+   </section>
+</footer>

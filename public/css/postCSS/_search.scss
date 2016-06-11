@@ -1,0 +1,23 @@
+.search__container{
+  margin: 70px auto 90px auto;
+}
+.search__row{
+  text-align: center;
+}
+.search__box{
+  margin: 0 20px 0 0;
+  border: none;
+  width: 280px;
+  color: gray;
+  font-size: 2em;
+  text-align: right;
+  border-bottom: 1px solid gray;
+
+}
+input:focus{
+  outline: none;
+}
+.search__submit{
+  margin: 0 0 0 20px;
+  border: none;
+}

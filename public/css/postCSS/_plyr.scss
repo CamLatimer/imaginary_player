@@ -1,0 +1,21 @@
+.plyr{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  li{
+    display: inline-block;
+    margin: 0 20px 0 0;
+    vertical-align: middle;
+  }
+}
+
+.plyr__title, .plyr__artist{
+  margin: 0;
+  display: inline-block;
+}
+.plyr__title{
+  margin: 0 20px 0 0;
+}
+audio{
+  background: white;
+}

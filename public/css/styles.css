@@ -1,6 +1,89 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
-body {
-  font-family: 'Oswald', sans-serif; }
+html, body, main {
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  height: 100%;
+  padding: 0;
+  z-index: -1; }
 
 ul {
   list-style: none; }
+
+.search__container {
+  margin: 70px auto 90px auto; }
+
+.search__row {
+  text-align: center; }
+
+.search__box {
+  margin: 0 20px 0 0;
+  border: none;
+  width: 280px;
+  color: gray;
+  font-size: 2em;
+  text-align: right;
+  border-bottom: 1px solid gray; }
+
+input:focus {
+  outline: none; }
+
+.search__submit {
+  margin: 0 0 0 20px;
+  border: none; }
+
+.container {
+  width: 100%; }
+
+.results__container {
+  width: 80%;
+  margin: 0 auto; }
+
+.results__row {
+  text-align: center; }
+
+.results__title, .results__artist {
+  margin: 0; }
+
+.plyr {
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
+  .plyr li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    vertical-align: middle; }
+
+.plyr__title, .plyr__artist {
+  margin: 0;
+  display: inline-block; }
+
+.plyr__title {
+  margin: 0 20px 0 0; }
+
+audio {
+  background: white; }
+
+.results__column {
+  text-align: center;
+  display: inline-block; }
+
+.siteHeader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: white;
+  padding: 0 0 0 20px; }
+  .siteHeader h1 {
+    margin: 0; }
+
+footer {
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  bottom: 0;
+  margin: 0;
+  background: white; }
+
+.plyr__info {
+  display: inline-block;
+  vertical-align: middle; }
