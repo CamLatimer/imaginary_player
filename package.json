@@ -10,14 +10,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^6.3.6",
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
     "gulp-jshint": "^2.0.1",
+    "gulp-postcss": "^6.1.1",
     "gulp-sass": "^2.3.1",
     "gulp-uglify": "^1.5.3",
     "gulp-watch": "^4.3.6",
     "jshint": "^2.9.2",
-    "jshint-stylish": "^2.2.0"
+    "jshint-stylish": "^2.2.0",
+    "postcss-get-color": "^0.1.0",
+    "postcss-scss": "^0.1.8"
   }
 }
