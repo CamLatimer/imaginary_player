@@ -1,8 +1,8 @@
 <!-- <h1 data-ng-click="showSongs()">TEST</h1> -->
 <div class="container search search__container">
   <div class="row search__row">
-    <form class="search__form" data-ng-submit="showSongs()">
-      <input type="text" class="search__input search__box" placeholder="search tracks">
+    <form class="search__form" data-ng-submit="getSongs()">
+      <input type="text" data-ng-model="input" class="search__input search__box" placeholder="search tracks">
       <input type="submit" class="search__input search__submit" "btn">
     </form>
   </div>
