@@ -7,18 +7,37 @@
   .controller('SearchCtrl', function($scope, $http){
     // grab input from search box
     $scope.input;
-    $scope.getSongs = function(){
+    $scope.tracks = [];
+    $scope.nextLink;
+    var url;
+
+    $scope.getInput = function(){
       var input = $scope.input;
       input = input.split(' ').join('+');
-      var url = 'https://api.soundcloud.com/tracks?q=' + input + '&limit=200&filter=public&client_id=4f2b9615c8783056a2eae41eba103c48';
-      $http.get(url)
-      .then(function(response){
-        $scope.tracks = response
-        console.log($scope.tracks);
-        console.log($scope.input);
-        console.log(url);
-      });
+      var inputUrl = 'https://api.soundcloud.com/search?q=' + input + '&limit=20&linked_partitioning&client_id=4f2b9615c8783056a2eae41eba103c48';
+      return inputUrl;
     }
+    $scope.loadSongs = function(url){
+      return $http.get(url)
+      .then(function(response){
+        $scope.collection = response.data.collection;
+        $scope.collection.forEach(function(track){
+          $scope.tracks.push(track);
+        });
+        $scope.nextLink = response.data.next_href;
+        console.dir(response);
+        console.log($scope.nextLink);
+        });
+    }
+
+    $scope.search = function(){
+      var myInput = $scope.getInput();
+      $scope.loadSongs(myInput);
+    }
+    $scope.loadMore = function(){
+      $scope.loadSongs($scope.nextLink);
+    }
+
 
   })
   .controller('ShowCtrl', function($scope){
