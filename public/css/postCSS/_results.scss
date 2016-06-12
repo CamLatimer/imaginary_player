@@ -3,11 +3,14 @@
 }
 .results__container{
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
 }
 .results__row{
   text-align: center;
 }
 .results__title, .results__artist{
   margin: 0;
+}
+.loadRow{
+  text-align: center;
 }
