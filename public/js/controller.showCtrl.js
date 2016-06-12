@@ -3,7 +3,7 @@
 (function(){
 
   angular
-  .module('controllers', [])
+  .module('show', [])
   .controller('ShowCtrl', function($scope){
   })
 })();

@@ -4,7 +4,8 @@
   angular
   .module('plyrApp', [
     'ui.router',
-    'controllers'
+    'show',
+    'search',
   ])
   .config([
     '$stateProvider',
