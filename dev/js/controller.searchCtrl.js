@@ -3,7 +3,7 @@
 (function(){
 
   angular
-  .module('search', [])
+  .module('controllerModule', [])
   .controller('SearchCtrl', function($scope, $http){
 
     $scope.input;
